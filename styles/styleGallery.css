@@ -1,0 +1,145 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px 250px 250px;
+    gap: 8px;
+    padding-top: 30px;
+}
+    
+.div1 {
+    grid-row: span 2 / span 2;
+
+}
+
+.div2 {
+    grid-row: span 2 / span 2;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div6 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+.div8 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+
+.div9 {
+    grid-column-start: 3;
+    grid-row-start: 5;
+    grid-column-start: 3;
+}
+
+.parent img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+/*Gallery*/
+/*efecto imagen*/
+
+.ful-img{
+    position: fixed; /*se fije*/
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    /* transform: translateX(-100%); */
+    justify-content: center;
+    align-items: center;
+    transition:  transform .4s ease-in;/*transformacion suabe*/
+    z-index: 99;
+}
+
+.ful-img img{
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.ful-img span{
+    position: absolute;
+    color: #fff;
+    top: 5%; right: 5%;
+    font-size: 30px;
+    cursor: pointer;
+} 
+
+/*Carrusel*/
+#icono_antes, #icono_next{
+    position: absolute;
+    color: #fff;
+    right: 5%;
+    font-size: 30px;
+    cursor: pointer;
+    width: 46px; height: 46px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 46px;
+    transition: 0.4s; 
+    top: 50%;
+}
+
+#icono_antes:first-child{
+    left: 55px;
+}
+
+#icono_next:last-child{
+    right: 55px;
+}
+
+
+@media(max-width: 991px){
+    .parent{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ful-img img {
+        height: 60%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+
+    #icono_antes, #icono_next {
+        font-size: 1.5em; /* Reduce el tamaño de los iconos en pantallas más pequeñas */
+    }
+}
+
+@media(max-width: 768px){
+
+    .ful-img img {
+        height: 40%; 
+    }
+
+    #icono_antes, #icono_next {
+        font-size: 2em; 
+    }
+}

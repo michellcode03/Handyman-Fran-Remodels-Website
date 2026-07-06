@@ -1,0 +1,355 @@
+:root {
+    --color-primer: #a3a3a3;
+    --color-cuear: #000000;
+
+}
+
+
+.Login {
+    display: flex;
+    width: 866px;
+    height: 510px;
+    margin: 40px auto;
+    box-shadow: 0 0 3px var(--color-primer);
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagen {
+    width: 327px;
+    height: 100%;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contenido-txt {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+}
+
+.contenido-txt h2 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    transform: translateX(10px);
+    color: #000;
+}
+
+.login-menu input,
+.login-menu3 select,
+.login-menu4 textarea {
+    width: 100%;
+    height: 36px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    outline: none;
+    color: var(--color-cuear);
+}
+
+.login-menu4 textarea {
+    height: 70px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    transform: translateY(-1.2em);
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    padding-top: 50px;
+}
+
+.backgrout_footer {
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4)),
+        url(../scr/bg4.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.text_footer a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.text_footer_one {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.email_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* separación entre icono y texto */
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .text_footer_one .telefono {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* separación entre imagen y número */
+  }
+
+  .text_footer_one .telefono i {
+    width: 20px; /* o 16px para más pequeño */
+    height: auto;
+    gap: 10px;
+  }
+
+  .telefono {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ajusta el espacio */
+    margin-bottom: 10px;
+  }
+  
+
+  
+
+@media (max-width: 900px) {
+    .Login {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 200px;
+    }
+
+    .contenido-txt {
+        padding: 20px;
+    }
+
+    .text_footer {
+        padding: 20px;
+      }
+    
+      .email_link {
+        font-size: 15px;
+        gap: 6px;
+      }
+    
+      .telefono p {
+        font-size: 15px;
+      }
+    
+      .telefono i {
+        font-size: 17px;
+      }
+    
+      .text_footer_one p {
+        font-size: 15px;
+      }
+
+    
+}
+
+/* Contenedor principal */
+.image-container {
+    max-width: 600px;
+    /* Reducido a un tamaño más pequeño */
+    margin: 30px auto;
+    padding: 15px;
+    /* background-color: #f0f0f0;  */
+    border-radius: 12px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Contenedor del formulario */
+.Login1 {
+    background-color: #ffffff;
+    padding: 23px;
+    border-radius: 12px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.contenido-txt1 h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+/* Estilo de los grupos de formulario */
+.login-menu_1,
+.login-menu_2,
+.login-menu_3,
+.login-menu_4 {
+    margin-bottom: 15px;
+}
+
+/* Títulos de los campos */
+.login-menu_1 h3,
+.login-menu_2 h3,
+.login-menu_3 h3,
+.login-menu_4 h3 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+/* Estilo de los campos de entrada */
+.login-menu_1 input,
+.login-menu_2 input,
+.login-menu_3 input,
+.login-menu_4 textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border: 2px solid #ddd;
+    /* Gris claro */
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    color: #333;
+    outline: none;
+}
+
+/* Estilo del área de texto */
+.login-menu_4 textarea {
+    resize: none;
+    height: 70px;
+}
+
+/* Cambio de color al enfocar los campos */
+.login-menu_1 input:focus,
+.login-menu_2 input:focus,
+.login-menu_3 input:focus,
+.login-menu_4 textarea:focus {
+    border-color: #bbb;
+    /* Gris más oscuro al enfocarse */
+}
+
+/* Estilo del botón de envío */
+#Enviar1 {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ccc;
+    /* Gris */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#Enviar1:hover {
+    background-color: #bbb;
+    /* Gris más oscuro al pasar el mouse */
+}
+
+/* Estilo de los iconos dentro de los inputs */
+.login-menu_1 i,
+.login-menu_2 i,
+.login-menu_3 i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    /* Gris */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .image-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contenido-txt1 h2 {
+        font-size: 16px;
+    }
+
+    .Login1 {
+        padding: 15px;
+    }
+    .text_footer_one{
+        text-align: center;
+    }
+}
+
+
+
+
+@media(max-width:480px) {
+    .text_footer {
+        padding: 25px;
+      }
+    
+      .email_link {
+        font-size: 14px;
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .telefono p {
+        font-size: 14px;
+      }
+    
+      .telefono i {
+        font-size: 16px;
+      }
+    
+      .text_footer_one p {
+        font-size: 14px;
+        text-align: center;
+      }
+    
+
+
+
+}
